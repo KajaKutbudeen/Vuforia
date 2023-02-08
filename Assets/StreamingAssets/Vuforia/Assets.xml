@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="maxyellow" size="0.150000 0.093750" />
+    <ImageTarget name="maxblack" size="0.150000 0.081299" />
+    <ImageTarget name="max1" size="0.150000 0.100000" />
+    <ImageTarget name="maxresdefault" size="0.150000 0.084375" />
+  </Tracking>
+</QCARConfig>
