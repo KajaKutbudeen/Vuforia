@@ -8,8 +8,12 @@ public class SimpleCloudRecoEventHandler : MonoBehaviour
     CloudRecoBehaviour mCloudRecoBehaviour;
     bool mIsScanning = false;
     string mTargetMetadata = "";
+    TextAsset jsonfile;
+
+    public ImageTargetBehaviour[] ImageTargets;
 
     public ImageTargetBehaviour ImageTargetTemplate;
+    private int Value;
 
     // Register cloud reco callbacks
     void Awake()
@@ -62,6 +66,9 @@ public class SimpleCloudRecoEventHandler : MonoBehaviour
         // Store the target metadata
         mTargetMetadata = cloudRecoSearchResult.MetaData;
 
+        Value = int.Parse(mTargetMetadata);
+
+        ImageTargetTemplate = ImageTargets[Value];
         // Stop the scanning by disabling the behaviour
         mCloudRecoBehaviour.enabled = false;
 
